@@ -45,4 +45,60 @@ def guess():
             print('oh try again')
     else:
         print('sorry, you failed')
-guess()
+#guess()
+def cart():
+    prices = [10,20,30]
+    total = 0
+    for item in prices:
+        total += item
+    print(total)
+#cart()
+
+#nested loops
+
+def nested():
+    numbers = [5,2,5,2,2]
+    for item in numbers:
+        print('*' * item)
+#nested()
+
+#list
+
+def largest_number():
+    array = ['moses', 'Arnaud', 'Issa', 'sebastien', 'Moussa', 'Josephe']
+    max = array[0]
+    for item in array:
+        if len(item) > len(max):
+            max = item
+    print(max)
+#largest_number()
+
+#list matrix
+
+def matrix_list():
+    matrix = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ]
+    for row in matrix:
+        print(row)
+        for item in row:
+            print(item)
+#matrix_list()
+
+#list methods
+
+def list_methods():
+    numbers = [5,2,1,7,4]
+    numbers.append(20)
+    print(numbers)
+    numbers.insert(1,20)
+    print(numbers)
+    numbers.remove(1)
+    print(numbers)
+    numbers.pop()
+    print(numbers)
+    numbers.clear()
+    print(numbers)
+list_methods()
